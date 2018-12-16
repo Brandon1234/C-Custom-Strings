@@ -21,16 +21,24 @@ extern "C" {
     typedef struct String{
         char* data;
         int size;
+        String (*initialize)(String string) = initializeString;
+        String (*initialize2)(String string, char* toSet) = initializeString;
     };
 
+    String initialize(String string);
+    
+    String initializeString(String string, char* toSet);
 
-    void setString(char* toChange);
+    void setString(String toSet, char* toChange);
     
     void setSize(String toCheck);
     
-    String getString(String toGet);
+    char *getString(String toGet);
     
     int getSize(String toGet);
+    
+    
+    
 #ifdef __cplusplus
 }
 #endif
