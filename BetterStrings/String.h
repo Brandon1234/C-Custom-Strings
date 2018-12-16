@@ -24,6 +24,13 @@ extern "C" {
     };
 
 
+    void setString(char* toChange);
+    
+    void setSize(String toCheck);
+    
+    String getString(String toGet);
+    
+    int getSize(String toGet);
 #ifdef __cplusplus
 }
 #endif
