@@ -23,6 +23,10 @@ extern "C" {
         int size;
         String (*initialize)(String string) = initializeString;
         String (*initialize2)(String string, char* toSet) = initializeString;
+        void (*setString)(String toSet, char *toChange) = setString;
+        void (*setSize)(String toCheck) = setSize;
+        char *(*getString)(String toGet) = getString;
+        int (*getSize)(String toGet) = getSize;
     };
 
     String initialize(String string);
