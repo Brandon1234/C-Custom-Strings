@@ -41,3 +41,12 @@ int getSize(String toGet){
     return toGet.size;
 }
 
+void setSize(String toCheck){
+    if(toCheck != NULL){
+        char *temp = toCheck.getString(toCheck);
+        int newSize = sizeof(temp);
+        
+        toCheck.size = newSize;
+        
+    }
+}
