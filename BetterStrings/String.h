@@ -40,7 +40,21 @@ extern "C" {
     char *getString(String toGet);
     
     int getSize(String toGet);
+    /**
+     * Adds two strings together
+     * @param one, the first string to be added and the destination of the new string
+     * @param two,  the second string to be added
+     * @return A new string stored in parameter one
+     */
+    String addStrings(String one, String two);
     
+    /**
+     * Given two character arrays, creates a new string
+     * @param one, the first character array
+     * @param two, the second character array
+     * @return a String struct containing the two arrays combined
+     */
+    String addArrays(char *one, char *two);
     
     
 #ifdef __cplusplus
