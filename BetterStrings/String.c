@@ -50,3 +50,35 @@ void setSize(String toCheck){
         
     }
 }
+
+String addArrays(char *one, char *two){
+    return NULL;
+}
+    
+int toInteger(String toConvert){
+    int toReturn;
+    char *ptr;
+    toReturn = strtol(toConvert.data, &ptr, 10);
+    
+    return toReturn;
+}
+
+double toDouble(String toConvert){
+    int toReturn;
+    char *ptr;
+    toReturn = strtod(toConvert.data, &ptr);
+    
+    return toReturn;
+}
+
+char charAt(String string, int index){
+    char toReturn;
+    char *ptr = string.data;
+    for(int i = 0; i < index; i ++){
+        ptr++;
+    }
+    
+    toReturn = *ptr;
+    
+    return toReturn;
+}
