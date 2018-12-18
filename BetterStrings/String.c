@@ -82,3 +82,22 @@ char charAt(String string, int index){
     
     return toReturn;
 }
+
+String subString(String string, int start, int end){
+    char *ptr = string.data;
+    int i = 0;
+    char subString[end-start];
+    for(i = 0; i <= start; i ++){
+        *ptr++;
+    }
+    
+    for(int j = i; j <= end; j ++){
+        subString[j - start] = *ptr;
+    }
+    
+    String toReturn;
+    toReturn.initialize2(subString);
+    
+    return toReturn;
+    
+}

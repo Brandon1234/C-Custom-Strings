@@ -62,6 +62,15 @@ extern "C" {
     
     char charAt(String string, int index);
     
+    /**
+     * Returns the substring within a string (inclusive)
+     * @param string, the string that the substring will come from
+     * @param start, the index where the substring starts (inclusive)
+     * @param end, the index where the substring ends (inclusive)
+     * @return String, a substring from the entered string
+     */
+    String subString(String string, int start, int end);
+    
 #ifdef __cplusplus
 }
 #endif
