@@ -56,6 +56,11 @@ extern "C" {
      */
     String addArrays(char *one, char *two);
     
+    int toInteger(String toConvert);
+    
+    double toDouble(String toConvert);
+    
+    char charAt(String string, int index);
     
 #ifdef __cplusplus
 }
